@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinar Registration</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step">
+                <div class="bullet">1</div>
+                <div class="check fas fa-check"></div>
+                <p>Attendee Info</p>
+            </div>
+            <div class="step">
+                <div class="bullet">2</div>
+                <div class="check fas fa-check"></div>
+                <p>Checkout</p>
+            </div>
+            <div class="step">
+                <div class="bullet">3</div>
+                <div class="check fas fa-check"></div>
+                <p>Success</p>
+            </div>
+        </div>
+
+        <form id="registration-form">
+            <div class="form-step active">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required />
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Whatsapp Number</label>
+                    <input type="tel" id="phone-number" placeholder="+XX-XXXXXXXXXX" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="abc@xyz.com" required />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <div class="form-group">
+                    <label for="payment-proof">Upload Screenshot</label>
+                    <input type="file" id="payment-proof" required />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="button" class="btn-next">Next</button>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <h2>Thank you for registering!</h2>
+                <br />
+                <p>Your registration has been successfully completed.</p>
+                <br>
+                <div class="form-buttons">
+                    <button type="button" class="btn-prev">Previous</button>
+                    <button type="button" class="btn-submit"><a href="submit.html">Submit</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
