@@ -455,8 +455,6 @@ body {
     }
 }
 
-
-
 /* Footer */
 .footer {
     background-color: #000;
@@ -470,6 +468,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .footer .footer-content {
@@ -477,13 +477,18 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 90%;
-    /* Set a max width for better layout control */
+    max-width: 100%;
     margin-bottom: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer .left-content,
+.footer .right-content {
+    flex: 1;
 }
 
 .footer .left-content {
-    flex: 1;
     text-align: left;
 }
 
@@ -491,32 +496,34 @@ body {
     text-align: right;
 }
 
+.footer .left-content p,
+.footer .right-content a {
+    font-size: 14px;
+}
+
 .footer .right-content a {
     color: #fff;
-    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer .right-content a:hover {
     color: #ff6347;
-    /* Add a hover color effect */
 }
 
 .footer .footer-text {
-    font-size: 16px;
+    font-size: 18px;
     color: #ccc;
+    margin-top: 10px;
 }
 
 .footer .footer-text a {
     color: #ff6347;
-    /* Email link color */
     text-decoration: none;
 }
 
 .footer .footer-text a:hover {
     text-decoration: underline;
-    /* Email link hover effect */
 }
 
 @media (max-width: 768px) {
@@ -530,5 +537,6 @@ body {
     .footer .right-content {
         width: 100%;
         margin-bottom: 10px;
+        text-align: center;
     }
 }
