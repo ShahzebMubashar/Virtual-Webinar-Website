@@ -519,12 +519,12 @@ body {
 }
 
 .footer .footer-text a {
-    color: #ff6347;
+    color: #fff;
     text-decoration: none;
 }
 
 .footer .footer-text a:hover {
-    text-decoration: underline;
+    color: blue;
 }
 
 @media (max-width: 768px) {
